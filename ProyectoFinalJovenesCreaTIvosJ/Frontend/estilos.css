@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(6, 0, 26);
+}
+
+.Menu{
+    height:60px ;
+    width:100%;
+    background-color: #061838;
+    margin-right: -10px;
+    margin-top: -10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    
+
+}
+
+
+
+nav{
+    width: 75%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 5px;
+    margin-left: 50px;
+
+}
+
+.buscar{
+    height: 25px;
+    width: 80px;
+    border-radius: 10px;
+    border: solid 2px #00f2ff;
+    cursor: pointer;
+    background-color: #000000;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-shadow: 1px 1px 10px rgb(0, 225, 255);
+
+}
+
+.buscar:hover{
+    transform: translateY(-3px);
+    transition: 0.3s;
+    animation: colores 3s ease-out infinite ;
+}
+
+@keyframes colores {
+    0% {background-color: #061838;}
+    25% {background-color: #0051ff;}
+    50% {background-color: #00b7ff;}
+    75% {background-color: #0051ff;}
+    100% {background-color: #061838;}
+    
+    
+}
+
+.BotonMenu{
+    cursor: pointer;
+    
+}
+
+.Barrita{
+    height: 5px;
+    width: 35px;
+    background-color: white;
+    margin: 6px 0;
+    border-radius: 5px;
+    margin-right: 50px;
+}
+
+.BarraDeBusqueda{
+    height: 100%;
+    width: 60%;
+    border-radius: 0px 10px 10px 0px;
+    border: none;
+    padding: 5px;
+    
+}
+
+.logo{
+    height: 200px;
+    width: 200px;
+    padding-left: 20px;
+    margin-top: 0px;
+    
+}
+
+main{
+    height: 450px;
+    width: 97%;
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 15px;
+    border-radius: 5px;
+    border-top: solid 1px rgb(0, 225, 255);
+    box-shadow: 0px -3px 10px rgb(0, 225, 255);
+
+
+}

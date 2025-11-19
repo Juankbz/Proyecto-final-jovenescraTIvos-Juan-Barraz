@@ -1,0 +1,42 @@
+.reseña-container {
+    background-color: #020014;
+    border-radius: 12px;
+    padding: 25px;
+    max-width: 500px;
+    margin: 30px auto;
+    box-shadow: 0 4px 12px rgba(0, 225, 255, 0.3);
+}
+
+.añadir-reseña-form input,
+.añadir-reseña-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 2px solid #00d0ff;
+    background-color: #060039;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+}
+
+.añadir-reseña-form textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.añadir-reseña-form button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: #00d0ff;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.añadir-reseña-form button:hover {
+    background-color: #00bbff;
+}

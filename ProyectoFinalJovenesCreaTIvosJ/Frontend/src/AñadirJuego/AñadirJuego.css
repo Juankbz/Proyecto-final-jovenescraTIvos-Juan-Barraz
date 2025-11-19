@@ -1,0 +1,68 @@
+.añadir-juego-container {
+    width: 90%;
+    max-width: 600px;
+    margin: 30px auto;
+    background-color: #000000;
+    padding: 30px 20px;
+    border-radius: 12px;
+    border-top: 2px solid rgb(0, 225, 255);
+    box-shadow: 0px 3px 12px rgba(0, 225, 255, 0.4);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.añadir-juego-container h2 {
+    text-align: center;
+    color: #00d0ff;
+    margin-bottom: 20px;
+}
+
+.añadir-juego-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.añadir-juego-form input,
+.añadir-juego-form textarea {
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: 1px solid #00d0ff;
+    background-color: #061838;
+    color: white;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: 0.3s;
+}
+
+.añadir-juego-form input:focus,
+.añadir-juego-form textarea:focus {
+    outline: none;
+    border-color: #8af9ff;
+    box-shadow: 0 0 5px #00d0ff;
+}
+
+.añadir-juego-form textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.añadir-juego-form button {
+    padding: 12px 20px;
+    background-color: #00d0ff;
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.añadir-juego-form button:hover {
+    background-color: #8af9ff;
+    transform: scale(1.05);
+}

@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(6, 0, 26);
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.editar-juego-container {
+    width: 450px;
+    background-color: #060039;
+    padding: 30px 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 195, 255, 0.3);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left:450px;
+}
+
+.editar-juego-container h2 {
+    text-align: center;
+    color: #00d0ff;
+    margin-bottom: 10px;
+    font-size: 24px;
+    text-shadow: 0 0 8px rgba(0, 208, 255, 0.6);
+}
+
+.editar-juego-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    
+}
+
+.editar-juego-form input,
+.editar-juego-form textarea {
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid #00d0ff;
+    background-color: #020014;
+    color: white;
+    font-size: 14px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.editar-juego-form input:focus,
+.editar-juego-form textarea:focus {
+    border-color: #8af9ff;
+    box-shadow: 0 0 8px rgba(0, 225, 255, 0.5);
+}
+
+.editar-juego-form textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.editar-juego-form button {
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    background-color: #00d0ff;
+    color: #060039;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.editar-juego-form button:hover {
+    background-color: #8af9ff;
+    transform: scale(1.05);
+}

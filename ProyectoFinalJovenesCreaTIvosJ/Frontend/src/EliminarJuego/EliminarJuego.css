@@ -1,0 +1,10 @@
+.delete-link{
+    font-size: 12px;
+    background-color: #01003f; 
+    border: solid 1px #00eaff;
+    color: white;
+    margin-left: 18px;
+    margin-bottom: 0;
+    height: 30px;
+
+}
