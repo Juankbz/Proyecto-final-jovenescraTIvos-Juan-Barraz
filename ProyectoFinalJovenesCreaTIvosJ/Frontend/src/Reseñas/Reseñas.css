@@ -18,16 +18,39 @@
     width: 95%;
 }
 
-.game-card {
+.nav-link{
+
+    font-size: 12px;
+    background-color: #01003f; 
+    border: solid 1px #00eaff;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.nav-links {
+    display: flex;
+    
+    justify-content: space-around;
+    gap: 15px;
+    margin-top: auto;
+    
+}
+
+.Re-card {
+    
     background-color: #060039;
     border: 2px solid #00d0ff;
     border-radius: 12px;
     padding: 15px;
     width: 250px;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+    
 }
 
-.game-card:hover {
+.Re-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 15px rgba(0, 195, 255, 0.5);
 }
@@ -56,6 +79,7 @@
 .fecha {
     font-size: 0.8rem;
     color: #888;
+    margin-bottom: 20px;
 }
 
 

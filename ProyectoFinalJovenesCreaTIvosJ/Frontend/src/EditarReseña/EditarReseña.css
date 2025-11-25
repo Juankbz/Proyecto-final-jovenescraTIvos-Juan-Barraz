@@ -1,0 +1,59 @@
+.editar-reseña-container {
+    background-color: #020014;
+    border-radius: 12px;
+    padding: 25px;
+    max-width: 550px;
+    margin: 40px auto;
+    box-shadow: 0 4px 12px rgba(0, 225, 255, 0.3);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+.editar-reseña-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #00d0ff;
+    text-shadow: 0 0 10px rgba(0, 208, 255, 0.6);
+}
+
+.editar-reseña-form input,
+.editar-reseña-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 2px solid #00d0ff;
+    background-color: #060039;
+    color: white;
+    font-size: 14px;
+}
+
+.editar-reseña-form textarea {
+    resize: vertical;
+    min-height: 90px;
+}
+
+.editar-reseña-form button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    background-color: #00d0ff;
+    color: #000;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.editar-reseña-form button:hover {
+    background-color: #00bbff;
+    box-shadow: 0 0 10px rgba(0, 208, 255, 0.5);
+}
+
+.editar-reseña-form input:focus,
+.editar-reseña-form textarea:focus {
+    outline: none;
+    border-color: #00eaff;
+    box-shadow: 0 0 8px rgba(0, 234, 255, 0.7);
+}

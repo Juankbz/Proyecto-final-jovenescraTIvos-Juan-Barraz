@@ -144,12 +144,12 @@ app.delete('/eliminar-juegos/:id', async (req, res) => {
 
 
 
-app.post("/añadir-reseñas/:juegoId", async (req, res) => {
+app.post("/add-reviews/:juegoId", async (req, res) => {
     try {
         const autor = req.body.autor;
         const comentario = req.body.comentario;
         const puntuacion = req.body.puntuacion;
-        const juegoId = req.body.juegoId;
+        const {juegoId} = req.params;
 
         const nuevaReseña = new Reseña({
             autor: autor,
@@ -167,11 +167,26 @@ app.post("/añadir-reseñas/:juegoId", async (req, res) => {
     }
 });
 
-app.get("/reseñas/:juegoId", async (req, res) => {
-    try {
-        const juegoId = req.params.juegoId;
+app.get ("/review/:id", async (req, res) => {
 
-        const reseñas = await Reseña.find({ juegoId: juegoId});
+    const {id} = req.params;
+
+         if (!id) {
+        return res.send('colocar un id valido');
+    }
+
+    try{const reseña = await Reseña.findById(id)
+    res.json(reseña);}
+    catch(error){
+        console.error('Error al obtener la reseña ', error);
+        res.status(500).send('Error al obtener la reseña');
+    } });
+
+app.get("/reviews/:Id", async (req, res) => {
+    try {
+        const {Id} = req.params;
+
+        const reseñas = await Reseña.find({ juegoId: Id});
 
         res.json(reseñas);
 
@@ -181,7 +196,7 @@ app.get("/reseñas/:juegoId", async (req, res) => {
     }
 });
 
-app.put("/editar-reseñas/:juegoId", async (req, res) => {
+app.put("/edit-reviews/:id", async (req, res) => {
     try {
         const id = req.params.id;
 
@@ -208,9 +223,9 @@ app.put("/editar-reseñas/:juegoId", async (req, res) => {
     }
 });
 
-app.delete("/eliminar-reseñas/:juegoId", async (req, res) => {
+app.delete("/delete-reviews/:id", async (req, res) => {
     try {
-        const id = req.params.id;
+        const {id} = req.params;
 
         await Reseña.findByIdAndDelete(id);
 

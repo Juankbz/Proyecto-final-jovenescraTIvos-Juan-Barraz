@@ -1,13 +1,13 @@
-import './EliminarJuego.css';
+import "./EliminarReview.css";
 
 
-function EliminarJuego({ id, onDelete }) {
-  const handleDelete = async () => {
+function EliminarReview({id , onDelete}) {
+ const handleDelete = async () => {
     const confirmar = window.confirm("¿Seguro que quieres borrar el juego?");
     if (!confirmar) return;
 
     try {
-      const res = await fetch(`http://localhost:3000/eliminar-juegos/${id}`, {
+      const res = await fetch(`http://localhost:3000/delete-reviews/${id}`, {
         method: "DELETE",
       });
 
@@ -23,8 +23,10 @@ function EliminarJuego({ id, onDelete }) {
 
   return (
     <button onClick={handleDelete} className="delete-link">
-      Borrar Juego
+      Borrar Reseña
     </button>
   );
 }
-export default EliminarJuego;
+
+
+export default EliminarReview;

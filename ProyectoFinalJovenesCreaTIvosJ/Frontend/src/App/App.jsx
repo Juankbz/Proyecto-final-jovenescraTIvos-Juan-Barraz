@@ -5,8 +5,7 @@ import AñadirJuego from "../AñadirJuego/AñadirJuego.jsx";
 import GameCards from "../GameCards/GameCards.jsx";
 import Reseñas from "../Reseñas/Reseñas.jsx";
 import AgregarReseña from "../AgregarReseña/AgregarReseña.jsx";
-
-// import EditarJuego from "../EditarJuego/EditarJuego.jsx";
+import EditarReseña from "../EditarReseña/EditarReseña.jsx";
 import "./App.css";
 
 
@@ -41,6 +40,8 @@ function App() {
       <Route path="/editar-juegos/:id" element={<EditarJuego />} />
       <Route path="/reseñas/:Id" element={<Reseñas />} />
       <Route path="/agregar-reseñas/:juegoId" element={<AgregarReseña />} />
+      <Route path="/edit-reviews/:id" element={<EditarReseña />} />
+      
       
     </Routes>
 
